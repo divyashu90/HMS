@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="HMS.main" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="masterstyle.css" />
+</head>
+<body>
+    <nav id="upperbarnav">
+        <a href="join.aspx">Join</a>
+        <a href="login.aspx">Login</a>
+    </nav>
+    <nav id="slidebarnav">
+        <div class="nav-logo">
+
+            <asp:Image ID="Image1" runat="server" Height="200px" Width="200px" ImageUrl="image/logo.png" Style="border-radius: 25px; border: 5px solid #feba4f;" />
+        </div>
+
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="home.aspx">Home</a></li>
+                <li><a href="room.aspx">Room</a></li>
+                <li><a href="hotelinfo.aspx">Hotel Info</a></li>
+                <li><a href="offer.aspx">Offer</a></li>
+                <li><a href="gallery.aspx">Gallery</a></li>
+                <li><a href="location.aspx">Location</a></li>
+                <li><a href="dining.aspx">dining</a></li>
+            </ul>
+
+        </div>
+
+        <ul class="logo">    
+            <li class="icon instagram">
+                <span class="logoname">instagram</span>
+                <span><i class="fab fa-instagram"></i></span>
+            </li>
+        
+            <li class="icon facebook">
+                <span class="logoname">Facebook</span>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </main>
+
+    </body>
+</html>

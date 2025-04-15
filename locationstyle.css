@@ -1,0 +1,56 @@
+﻿
+.location-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.location-heading {
+    font-size: 36px;
+    color: #3a7bd5;
+    margin-bottom: 10px;
+}
+
+.location-subtext {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.place-card {
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    .place-card:hover {
+        transform: scale(1.03);
+    }
+
+    .place-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .place-card h3 {
+        font-size: 20px;
+        margin: 15px 10px 5px;
+        color: #222;
+    }
+
+    .place-card p {
+        font-size: 14px;
+        color: #555;
+        margin: 0 10px 15px;
+    }

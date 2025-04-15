@@ -1,0 +1,44 @@
+﻿
+.thankyou-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #f8f9fa;
+}
+
+.thankyou-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+    .thankyou-card h1 {
+        font-size: 36px;
+        color: #3a7bd5;
+        margin-bottom: 20px;
+    }
+
+    .thankyou-card p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+.back-home-button {
+    text-decoration: none;
+    background: #3a7bd5;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+    .back-home-button:hover {
+        background: #275da3;
+    }

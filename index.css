@@ -1,0 +1,135 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+}
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+*{
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    *:focus,
+    *:active {
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+    background: #000;
+}
+
+.logo {
+    display: inline-flex;
+    list-style: none;
+}
+
+    .logo .icon {
+        position: relative;
+        background: #ffffff;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .logo .logoname {
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+        background: #ffffff;
+        color: #ffffff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+        .logo .logoname::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: #ffffff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+    .logo .icon:hover .logoname {
+        top: -45px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .logo .icon:hover span,
+    .logo .icon:hover .logoname {
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo .facebook:hover,
+    .logo .facebook:hover .logoname,
+    .logo .facebook:hover .logoname::before {
+        background: #1877F2;
+        color: #ffffff;
+    }
+
+
+    .logo .instagram:hover,
+    .logo .instagram:hover .logoname,
+    .logo .instagram:hover .logoname::before {
+        background: #E4405F;
+        color: #ffffff;
+    }

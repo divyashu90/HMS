@@ -1,0 +1,251 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+}
+
+
+
+#upperbarnav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+    background-color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+}
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    *:focus,
+    *:active {
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    /*place-items: center;*/
+}
+
+.logo {
+    display: inline-flex;
+    list-style: none;
+}
+
+    .logo .icon {
+        position: relative;
+        background: #ffffff;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .logo .logoname {
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+        background: #ffffff;
+        color: #ffffff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+        .logo .logoname::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: #ffffff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+    .logo .icon:hover .logoname {
+        top: -45px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .logo .icon:hover span,
+    .logo .icon:hover .logoname {
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo .facebook:hover,
+    .logo .facebook:hover .logoname,
+    .logo .facebook:hover .logoname::before {
+        background: #1877F2;
+        color: #ffffff;
+    }
+
+
+    .logo .instagram:hover,
+    .logo .instagram:hover .logoname,
+    .logo .instagram:hover .logoname::before {
+        background: #E4405F;
+        color: #ffffff;
+    }
+
+
+#slidebarnav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#slidebarnav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+    .nav-list li {
+        margin: 1px 0; 
+    }
+
+        .nav-list li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+            .nav-list li a:hover {
+                background-color: #ddd;
+                color: #000;
+            }
+
+
+#upperbarnav a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+
+    #upperbarnav a:focus,
+    #upperbarnav a:active {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+#upperbarnav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+    outline: none;
+}
+
+    #upperbarnav a:hover {
+        background-color: #ddd;
+        color: #000;
+    }
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 270px; 
+    background-color: #f4f4f4; 
+    z-index: 1000; 
+    overflow-y: auto;
+}
+
+.main-content {
+    margin-left: 270px; 
+    padding: 20px;
+    padding-top: 80px; 
+}
+
+
+#upperbarnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 270px);
+    height: 60px; 
+    background-color: white;
+    z-index: 1001;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

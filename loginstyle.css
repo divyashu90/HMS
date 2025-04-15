@@ -1,0 +1,115 @@
+﻿.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background: rgba(0,0,0,.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+    .login-box p:first-child {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .login-box .user-box {
+        position: relative;
+    }
+
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #fff;
+            font-size: 12px;
+        }
+
+
+.animated-border-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+    .animated-border-btn::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(90deg, transparent, #4ea5f0, transparent);
+        z-index: -1;
+        animation: border-move 2s linear infinite;
+        border-radius: 10px;
+    }
+
+    .animated-border-btn::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #111; /* background of the button (or match your card color) */
+        border-radius: 10px;
+        z-index: -2;
+    }
+
+@keyframes border-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.animated-border-btn:hover {
+    box-shadow: 0 0 15px rgba(78, 165, 240, 0.6);
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+

@@ -1,0 +1,78 @@
+﻿
+.home-container {
+    padding: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+.home-title {
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.home-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    flex: 1 1 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+    .feature-card h2 {
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+        color: #666;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+
+.explore-button-container {
+    text-align: left;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffb200;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .explore-button:hover {
+        background-color: #e8a300;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
